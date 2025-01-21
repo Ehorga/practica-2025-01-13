@@ -1,0 +1,41 @@
+.main-nav{
+
+}
+.main-menu{
+list-style: none;
+
+}
+.item{
+display: inline-block;
+position: relative;
+
+}
+.main-menu a{
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.5em;
+    width: 100%;
+}
+.main-menu a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.sub-menu{
+    position: absolute;
+    list-style: none;
+    background-color: black;
+    padding-left: 0;
+    display: none;
+    padding: 0 0.5em;
+}
+.item:hover>.sub-menu {
+    display: block;
+}
+.sub-menu .sub-menu{
+    left: 100%;
+    top: 0;
+}
+.sub-menu>.item{
+    width: 100%;
+    
+}
