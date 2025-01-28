@@ -17,7 +17,7 @@ h1{
 .nav{
 position: fixed;
 left: 0;
-padding-top: 132px;
+padding-top: 145px;
 background-color:rgb(41, 39, 37);
 width: 20%;
 height: 100vh;
@@ -68,4 +68,29 @@ a{
 }
 .article img{
     max-width: 100%;
+}
+.games:hover::after{
+    content: url(./assets/icons/controller-classic-outline.svg);
+}
+.achvements:hover::after{
+    content: url(./assets/icons/trophy-outline.svg);
+}
+.friends:hover::after{
+    content: url(./assets/icons/account-group-outline.svg);
+}
+.setting:hover::after{
+    content: url(./assets/icons/cog-outline.svg);
+}
+.picture::after{
+    display: inline-block;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    content: "";
+}
+.picture:hover::after{
+   opacity: 1;
 }

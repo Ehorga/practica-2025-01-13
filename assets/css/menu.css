@@ -39,3 +39,20 @@ position: relative;
     width: 100%;
     
 }
+.item:has(>.sub-menu)>a::after{
+    content:url(./../icons/menu-down.svg);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+.item:hover:has(>.sub-menu)>a::after{
+content:url(./../icons/menu-up.svg);
+}
+.item .item:has(>.sub-menu)>a::after{
+content: url(./../icons/menu-right.svg);
+}
+.item .item:hover:has(>.sub-menu)>a::after{
+    content: url(./../icons/menu-left.svg);
+    }
